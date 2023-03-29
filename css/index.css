@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Eina-Regular";
+  src: url("/fonts/Eina02-Regular.ttf");
+}
+@font-face {
+  font-family: "Eina-SemiBold";
+  src: url("/fonts/Eina02-SemiBold.ttf");
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Eina-Regular";
+}
+
+nav {
+  min-height: 5vh;
+  width: 100%;
+  padding: 2rem 3rem;
+  background-color: #070709;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+nav img {
+  width: 20rem;
+  height: 3.8rem;
+  cursor: pointer;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 2rem;
+}
+nav ul li {
+  list-style-type: none;
+  font-size: 1.8rem;
+  color: #73E9F6;
+}
+nav ul li:not(:last-child) {
+  padding: 1rem 2.2rem;
+}
+nav ul li:hover {
+  background-color: #131820;
+  border-radius: 0.5rem;
+}
+nav ul .tech {
+  margin-right: 1.7rem;
+}
+nav ul a {
+  text-decoration: none;
+  background-color: #FF5841;
+  padding: 1.5rem 1.5rem;
+  border-radius: 0.8rem;
+  color: #fff;
+  font-family: "Eina-SemiBold";
+  font-size: 1.7rem;
+  transition: all 0.3s;
+  margin-left: 1.7rem;
+}
+nav ul a:hover {
+  box-shadow: 0 0 1.2rem 0.1rem #FF5841;
+}
+nav ul a span {
+  width: 10rem;
+  font-size: 3rem;
+  align-items: center;
+}
+
+.hero {
+  min-height: 95vh;
+  background: url(/img/banner.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-text-box {
+  color: #fff;
+}

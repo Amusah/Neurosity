@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Eina-Regular';
+    src: url('/fonts/Eina02-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Eina-SemiBold';
+    src: url('/fonts/Eina02-SemiBold.ttf');
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Eina-Regular';
+    //background-color: #000;
+}
