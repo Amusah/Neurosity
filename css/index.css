@@ -21,14 +21,14 @@ body {
 }
 
 header {
-  min-height: 100vh;
+  min-height: 120vh;
   background: url("/img/banner.webp");
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
-
-nav {
+header nav {
   min-height: 5vh;
   width: 100%;
   padding: 1.2rem 3rem;
@@ -38,44 +38,45 @@ nav {
   align-items: center;
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
-nav img {
+header nav .nav-logo {
   width: 20rem;
   height: 3.8rem;
   cursor: pointer;
 }
-nav ul {
+header nav ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-right: 2rem;
 }
-nav ul .tech {
+header nav ul .tech {
   margin-right: 1.7rem;
 }
-nav ul li {
+header nav ul li {
   list-style-type: none;
   font-size: 1.8rem;
   cursor: pointer;
 }
-nav ul li:not(:last-child) {
+header nav ul li:not(:last-child) {
   padding: 1.5rem 2.2rem;
 }
-nav ul li:hover:not(:last-child) {
+header nav ul li:hover:not(:last-child) {
   background-color: #131820;
   border-radius: 0.5rem;
 }
-nav ul li a {
+header nav ul li a {
   text-decoration: none;
   color: #6ED7DD;
 }
-nav ul li a:hover:not(.crown-txt) {
+header nav ul li a:hover:not(.crown-txt) {
   background: -webkit-linear-gradient(left, #73E9F6, #0E77CA);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-nav ul .get-crown {
+header nav ul .get-crown {
   text-decoration: none;
   background-color: #FF5841;
   padding: 0.5rem 0 0.5rem 0;
@@ -92,18 +93,51 @@ nav ul .get-crown {
   justify-content: center;
   align-items: center;
 }
-nav ul .get-crown:hover {
+header nav ul .get-crown:hover {
   box-shadow: 0 0 1.2rem 0.1rem #FF5841;
 }
-nav ul .get-crown .crown-txt {
+header nav ul .get-crown .crown-txt {
   color: #fff;
   font-weight: 500;
 }
-nav ul .get-crown .arrow, nav ul .get-crown span {
+header nav ul .get-crown .arrow, header nav ul .get-crown span {
   font-size: 3rem;
-  padding: 0.2rem 0 1rem 0.2rem;
+  padding: 0.2rem 0 1rem 0.25rem;
 }
-nav ul .get-crown:hover .arrow span {
+header nav ul .get-crown:hover .arrow span {
   padding-left: 0.1rem;
   padding-right: 0.1rem;
+}
+header .hero {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  padding: 0 0 15rem 15rem;
+}
+header .hero .hero-text {
+  color: #fff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+header .hero .hero-text h1 {
+  font-family: "Eina-Regular";
+  font-size: 4rem;
+  font-weight: 500;
+}
+header .hero .hero-text .crown-tm {
+  font-family: "Eina-SemiBold";
+  font-size: 9rem;
+  font-weight: 900;
+  height: 10rem;
+  padding-bottom: 3rem;
+  background: -webkit-linear-gradient(left, #73E9F6 10%, #0E77CA 35%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+header .hero .hero-text .crown-tm sup {
+  font-size: 3.5rem;
+  height: 3rem;
+  padding-bottom: 5rem;
 }
