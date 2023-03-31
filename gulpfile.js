@@ -2,7 +2,6 @@ const { src, dest, watch, series } = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 
 compileCss = ()=>{
-    console.log('Compiling css');
     return src('pages/**/*.scss') // scss source file
     .pipe(sass()) //scss compiler
     .pipe(dest('css')) // computed css

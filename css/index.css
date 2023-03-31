@@ -20,14 +20,24 @@ body {
   font-family: "Eina-Regular";
 }
 
+header {
+  min-height: 100vh;
+  background: url("/img/banner.webp");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 nav {
   min-height: 5vh;
   width: 100%;
-  padding: 2rem 3rem;
-  background-color: #070709;
+  padding: 1.2rem 3rem;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  align-items: center;
+  position: fixed;
+  width: 100%;
 }
 nav img {
   width: 20rem;
@@ -40,48 +50,60 @@ nav ul {
   justify-content: space-between;
   padding-right: 2rem;
 }
-nav ul li {
-  list-style-type: none;
-  font-size: 1.8rem;
-  color: #73E9F6;
-}
-nav ul li:not(:last-child) {
-  padding: 1rem 2.2rem;
-}
-nav ul li:hover {
-  background-color: #131820;
-  border-radius: 0.5rem;
-}
 nav ul .tech {
   margin-right: 1.7rem;
 }
-nav ul a {
+nav ul li {
+  list-style-type: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+nav ul li:not(:last-child) {
+  padding: 1.5rem 2.2rem;
+}
+nav ul li:hover:not(:last-child) {
+  background-color: #131820;
+  border-radius: 0.5rem;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #6ED7DD;
+}
+nav ul li a:hover:not(.crown-txt) {
+  background: -webkit-linear-gradient(left, #73E9F6, #0E77CA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+nav ul .get-crown {
   text-decoration: none;
   background-color: #FF5841;
-  padding: 1.5rem 1.5rem;
+  padding: 0.5rem 0 0.5rem 0;
   border-radius: 0.8rem;
   color: #fff;
-  font-family: "Eina-SemiBold";
+  font-family: "Eina-Regular";
   font-size: 1.7rem;
   transition: all 0.3s;
   margin-left: 1.7rem;
-}
-nav ul a:hover {
-  box-shadow: 0 0 1.2rem 0.1rem #FF5841;
-}
-nav ul a span {
-  width: 10rem;
-  font-size: 3rem;
+  width: 16rem;
+  height: 4.5rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
-
-.hero {
-  min-height: 95vh;
-  background: url(/img/banner.webp);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+nav ul .get-crown:hover {
+  box-shadow: 0 0 1.2rem 0.1rem #FF5841;
 }
-.hero-text-box {
+nav ul .get-crown .crown-txt {
   color: #fff;
+  font-weight: 500;
+}
+nav ul .get-crown .arrow, nav ul .get-crown span {
+  font-size: 3rem;
+  padding: 0.2rem 0 1rem 0.2rem;
+}
+nav ul .get-crown:hover .arrow span {
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
 }
