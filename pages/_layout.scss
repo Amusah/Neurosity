@@ -64,87 +64,103 @@ header{
                 }
             }
 
-            .get-crown{
-                text-decoration: none;
-                background-color: #FF5841;
-                padding: 0.5rem 0 0.5rem 0;
-                border-radius: 0.8rem;
-                color: #fff;
-                font-family: 'Eina-Regular';
-                font-size: 1.7rem;
-                transition: all 0.3s;
-                margin-left: 1.7rem;
-                width: 16rem;
-                height: 4.5rem;
-                text-align: center;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                &:hover{
-                    box-shadow: 0 0 1.2rem 0.1rem #FF5841;
-                }
-
-                .crown-txt{
-                    color: #fff;
-                    font-weight: 500;
-                }
-
-                .arrow ,span{
-                    font-size: 3rem;
-                    padding: 0.2rem 0 1rem 0.25rem;
-                    
-                    //align-items: center;
-                }
-                &:hover .arrow span{
-                    padding-left: 0.1rem;
-                    padding-right: 0.1rem;
-                }
+            .get-crown:hover .arrow span{
+                padding: 0 0.1rem;
             }
+
+            .arrow ,span{
+                font-size: 3rem;
+                padding: 0.2rem 0 1rem 0.25rem;
+        
+            }
+
         }
 
-        
     }
 
-    .hero {
-        position: absolute;
-        top: 30%;
-        width: 100%;
-        padding: 0 0 15rem 15rem;
-        //align-items: center;
-        
-        .hero-text{
-            color: #fff;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            //justify-content: flex-start;
+    // $header1: calc(2rem + 1vw);
+    // $header2: calc(3.5rem + 1vw);
+    // $header3: calc(3rem + 1vw);
+    // $header4: calc(2.4rem + 1vw);
+    // $text: calc(1.5rem + 1vw);
+    // $big: calc(6rem + 1vw);
+}
 
-            h1{
-                font-family: 'Eina-Regular';
-                font-size: 4rem;
-                font-weight: 500;
-            }
-            .crown-tm{
-                font-family: 'Eina-SemiBold';
-                font-size: 9rem;
-                font-weight: 900;
-                height: 10rem;
-                padding-bottom: 3rem;
-                background: -webkit-linear-gradient(left, #73E9F6 10%, #0E77CA 35%,);
-                        background-clip: text;
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
+// hero text
+.hero {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    width: 100%;
+    padding: 0 0 15rem 15rem;
+    //align-items: center;
+    
+    .hero-text{
+        color: #fff;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        padding: 5rem;
+        //text-align: center;
 
-                sup{
-                    font-size: 3.5rem;
-                    height: 3rem;
-                    //font-family: 'Eina-Regular';
-                    padding-bottom: 5rem;
-                    
-                }
-            }
-           
+        //justify-content: flex-start;
+
+        h1{
+            font-family: 'Eina-Regular';
+            font-size: calc(3.5rem + 1vw);;
+            font-weight: 500;
+            
         }
+        .crown-tm{
+            font-family: 'Eina-SemiBold';
+            font-size: calc(6.5rem + 1vw);;
+            font-weight: 900;
+            width: 80rem;
+            height: 10rem;
+            padding-bottom: 3rem;
+            background: -webkit-linear-gradient(left, #73E9F6, #0E77CA 45%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            //text-align: center;
+            
+            sup{
+                font-size: 3.5rem;
+                height: 3rem;
+                //font-family: 'Eina-Regular';
+                padding-bottom: 5rem;
+                
+            }
+        }
+
+        div{
+            p{
+                font-size: calc(.6rem + 1vw);
+                line-height: 1.5;
+                color: #52646E;
+                padding: 2rem 0 3.5rem;
+            }
+            .get-crown{
+                width: 18rem;
+                margin: 0;
+                
+                .arrow, span{
+                    font-size: 3rem;
+                    padding: 0.1rem 0.5rem 1rem 0.25rem;
+            
+                }
+                .crown-txt{
+                    text-decoration: none;
+                }
+
+                &:hover .arrow span{
+                    padding-right: 0.3rem;
+                    padding-left: 0.5rem;
+                    transition: all 0.8s;
+                }
+                
+            }
+        }
+       
     }
 }

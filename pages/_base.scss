@@ -22,3 +22,33 @@ body{
     font-family: 'Eina-Regular';
     //background-color: #000;
 }
+
+
+// Button
+.get-crown{
+    text-decoration: none;
+    background-color: #FF5841;
+    padding: 0.5rem 0 0.5rem 1rem;
+    border-radius: 0.8rem;
+    color: #fff;
+    font-family: 'Eina-Regular';
+    font-size: 1.7rem;
+    transition: all 0.3s;
+    margin-left: 1.7rem;
+    width: 17rem;
+    height: 4.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover{
+        box-shadow: 0 0 1.2rem 0.1rem #FF5841;
+    }
+
+    .crown-txt{
+        color: #fff;
+        font-weight: 500;
+    }
+
+}
