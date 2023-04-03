@@ -20,13 +20,13 @@ body {
   font-family: "Eina-Regular";
 }
 
-.get-crown {
+.get-crown-btn {
   text-decoration: none;
   background-color: #FF5841;
   padding: 0.5rem 0 0.5rem 1rem;
   border-radius: 0.8rem;
   color: #fff;
-  font-family: "Eina-Regular";
+  font-family: "Eina-SemiBold";
   font-size: 1.7rem;
   transition: all 0.3s;
   margin-left: 1.7rem;
@@ -37,21 +37,22 @@ body {
   justify-content: center;
   align-items: center;
 }
-.get-crown:hover {
+.get-crown-btn:hover {
   box-shadow: 0 0 1.2rem 0.1rem #FF5841;
 }
-.get-crown .crown-txt {
+.get-crown-btn .crown-txt {
   color: #fff;
   font-weight: 500;
 }
 
 header {
-  min-height: 120vh;
+  min-height: 110vh;
   background: url("/img/banner.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  overflow: hidden;
 }
 header nav {
   min-height: 5vh;
@@ -70,100 +71,184 @@ header nav .nav-logo {
   height: 3.8rem;
   cursor: pointer;
 }
-header nav ul {
+header nav .nav-links {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-right: 2rem;
 }
-header nav ul .tech {
+header nav .nav-links .tech {
   margin-right: 1.7rem;
 }
-header nav ul li {
+header nav .nav-links li {
   list-style-type: none;
   font-size: 1.8rem;
   cursor: pointer;
 }
-header nav ul li:not(:last-child) {
+header nav .nav-links li:not(:last-child) {
   padding: 1.5rem 2.2rem;
 }
-header nav ul li:hover:not(:last-child) {
+header nav .nav-links li:hover:not(:last-child) {
   background-color: #131820;
   border-radius: 0.5rem;
 }
-header nav ul li a {
+header nav .nav-links li a {
   text-decoration: none;
   color: #6ED7DD;
 }
-header nav ul li a:hover:not(.crown-txt) {
+header nav .nav-links li a:hover:not(.crown-txt) {
   background: -webkit-linear-gradient(left, #73E9F6, #0E77CA);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-header nav ul .get-crown:hover .arrow span {
+header nav .nav-links .get-crown-btn:hover .arrow span {
   padding: 0 0.1rem;
 }
-header nav ul .arrow, header nav ul span {
+header nav .nav-links .arrow, header nav .nav-links span {
   font-size: 3rem;
   padding: 0.2rem 0 1rem 0.25rem;
+}
+header nav .burger {
+  display: none;
+}
+header nav .get-crown-li {
+  display: none;
+}
+header nav .nav-logo-2 {
+  display: none;
 }
 
 .hero {
   position: absolute;
-  top: 20%;
+  top: 21%;
   left: 5%;
   width: 100%;
-  padding: 0 0 15rem 15rem;
+  padding: 0 0 14.5rem 14.5rem;
 }
 .hero .hero-text {
   color: #fff;
-  width: 50%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   padding: 5rem;
 }
-.hero .hero-text h1 {
+.hero .hero-text .hero-header {
   font-family: "Eina-Regular";
-  font-size: calc(3.5rem + 1vw);
+  font-size: 5.6rem;
   font-weight: 500;
+  line-height: 1.3;
 }
 .hero .hero-text .crown-tm {
   font-family: "Eina-SemiBold";
-  font-size: calc(6.5rem + 1vw);
+  font-size: 8.9rem;
   font-weight: 900;
-  width: 80rem;
+  width: 50rem;
   height: 10rem;
-  padding-bottom: 3rem;
-  background: -webkit-linear-gradient(left, #73E9F6, #0E77CA 45%);
+  padding-bottom: 10.5rem;
+  letter-spacing: 0.5rem;
+  display: flex;
+  margin-left: 0;
+  background: -webkit-linear-gradient(left, #73E9F6, #0E77CA 70%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.hero .hero-text .crown-tm sup {
-  font-size: 3.5rem;
-  height: 3rem;
-  padding-bottom: 5rem;
+.hero .hero-text .crown-tm .tm {
+  font-size: 2.5rem;
+  margin-top: 1.5rem;
+  letter-spacing: 0;
 }
-.hero .hero-text div p {
-  font-size: calc(0.6rem + 1vw);
+.hero .hero-text .hero-footer p {
+  font-size: 2.4rem;
   line-height: 1.5;
-  color: #52646E;
-  padding: 2rem 0 3.5rem;
+  color: #5B707A;
+  padding: 1.5rem 0 3.5rem;
 }
-.hero .hero-text div .get-crown {
+.hero .hero-text .hero-footer .get-crown-btn {
   width: 18rem;
   margin: 0;
 }
-.hero .hero-text div .get-crown .arrow, .hero .hero-text div .get-crown span {
+.hero .hero-text .hero-footer .get-crown-btn .arrow, .hero .hero-text .hero-footer .get-crown-btn span {
   font-size: 3rem;
-  padding: 0.1rem 0.5rem 1rem 0.25rem;
+  padding: 0.5rem 0.5rem 1.1rem 0.25rem;
 }
-.hero .hero-text div .get-crown .crown-txt {
+.hero .hero-text .hero-footer .get-crown-btn .crown-txt {
   text-decoration: none;
 }
-.hero .hero-text div .get-crown:hover .arrow span {
+.hero .hero-text .hero-footer .get-crown-btn:hover .arrow span {
   padding-right: 0.3rem;
   padding-left: 0.5rem;
   transition: all 0.8s;
+}
+
+@media screen and (max-width: 1300px) {
+  .hero {
+    top: 22%;
+    padding: 0 0 8rem 8rem;
+  }
+  .hero .hero-text .hero-header {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 1460px) {
+  .hero {
+    left: 0%;
+  }
+}
+@media screen and (max-width: 1025px) {
+  nav .burger {
+    display: block;
+    position: relative;
+    cursor: pointer;
+  }
+  nav .burger span {
+    padding: 0.2rem 2rem;
+    background: #5B707A;
+    margin: 0.5rem 0;
+    display: block;
+    transition: all 1s;
+  }
+  nav .nav-links {
+    position: relative;
+    background: #010203;
+    width: 43%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 57%;
+    text-align: center;
+    flex-direction: column;
+    transition: transform 1s ease;
+    opacity: 0.93;
+  }
+  nav .nav-links .nav-logo-2 {
+    display: block !important;
+    position: absolute;
+    left: 6%;
+    top: 4%;
+    width: 14rem;
+  }
+  nav .nav-links .I {
+    position: absolute;
+    top: 18%;
+    margin-left: 1.7rem;
+  }
+  nav .nav-links .II {
+    position: absolute;
+    top: 25%;
+  }
+  nav .nav-links .III {
+    position: absolute;
+    top: 33%;
+  }
+  nav .nav-links li a {
+    color: #2AC7DC !important;
+  }
+  nav .nav-links .get-crown-li {
+    display: block;
+  }
+  nav .nav-links .get-crown-btn {
+    display: none;
+  }
 }
