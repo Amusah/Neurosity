@@ -1,3 +1,21 @@
+@mixin firefox-nav-btn {
+    @-moz-document url-prefix() {
+        .arrow ,span{
+        font-size: 2.2rem;
+        padding: 0.2rem 0 0.1rem 0.25rem;
+      }
+    }
+  }
+
+  @mixin firefox-hero-btn {
+    @-moz-document url-prefix() {
+        .arrow, span{
+            font-size: 3rem;
+            padding: 1.1rem 0.5rem 1.1rem 0.25rem;
+        }
+    }
+  }
+
 header{
         min-height:110vh;
         background: url('/img/banner.webp');
@@ -46,7 +64,7 @@ header{
                 &:not(:last-child){
                     padding: 1.5rem 2.2rem;
                 }
-                &:hover:not(:last-child){
+                &:hover:not(.get-crown-btn){
                     background-color: #131820;
                     border-radius: 0.5rem; 
                 }
@@ -64,15 +82,16 @@ header{
                     }
                 }
             }
+            .arrow, span{
+                font-size: 3rem;
+                padding: 0.2rem 0 1rem 0.25rem;
+            }
+            @include firefox-nav-btn;
 
             .get-crown-btn:hover .arrow span{
                 padding: 0 0.1rem;
             }
-
-            .arrow ,span{
-                font-size: 3rem;
-                padding: 0.2rem 0 1rem 0.25rem;
-            }
+          
         }
 
         // NAV TOGGLE COMPONENETS
@@ -82,9 +101,10 @@ header{
         .get-crown-li{
             display: none;
         }
-        .nav-logo-2{
+        .nav-logo-2,.socials{
             display: none;
         }
+       
 
     }
 
@@ -159,6 +179,8 @@ header{
                     padding: 0.5rem 0.5rem 1.1rem 0.25rem;
             
                 }
+                @include firefox-hero-btn;
+
                 .crown-txt{
                     text-decoration: none;
                 }
@@ -195,31 +217,37 @@ header{
 
 @media screen and (max-width: 1025px){
     nav{
+        padding: 2rem 2.7rem !important;
+        text-align: center;
         .burger{
-            display: block ;
-            position: relative;
+            display: block !important;
+            //position: relative;
             cursor: pointer;
+            //width: 2rem;
+            
     
             & span{
-                padding: 0.2rem 2rem;
+                padding: 0.1rem 1.1rem;
                 background: #5B707A;
-                margin: 0.5rem 0;
+                margin: 0.4rem 0;
                 display: block;
-                transition: all 1s;
+                //width: 50% !important;
+                //transition: all 1s ease-in;
             }
         }
             // position: relative;
             .nav-links{
                 position: relative;;
                 background: #010203;
-                width: 43%;
+                width: 46%;
                 height: 100%;
                 position: fixed;
                 top: 0;
-                left: 57%;
+                left: 100%;
+                // left: 57%;
                 text-align: center;
                 flex-direction: column;
-                transition: transform 1s ease;
+                transition: transform 0.6s ease;
                 opacity: 0.93;
 
                 .nav-logo-2{
@@ -232,19 +260,16 @@ header{
               
                .I{
                 position: absolute;
-                top: 18%;
-                //left: 30%;
+                top: 19%;
                 margin-left: 1.7rem;
                }
                .II{
                 position: absolute;
-                top: 25%;
-                //left: 35%;
+                top: 26%;
                }
                .III{
                 position: absolute;
                 top: 33%;
-                //left: 30%;
                }
                li a{
                 color: #2AC7DC !important;
@@ -255,6 +280,35 @@ header{
                 }
                 .get-crown-btn{
                     display: none;
+                }
+
+                .socials{
+                    display: block;
+                    position: absolute;
+                    top: 83%;
+
+                    a{
+                        padding: 0 1.1rem;
+                        img{
+                            width: 2rem;
+                        }
+                    }
+                }
+            }
+
+            .nav-open{
+                transform: translateX(-100%);
+            }
+            .toggle{
+                .line1{
+                    transform: rotateZ(45deg) translateY(300%);
+                    //margin
+                }
+                .line2{
+                    opacity: 0;
+                }
+                .line3{
+                    transform: rotateZ(-45deg) translateY(-300%);
                 }
             }
         }

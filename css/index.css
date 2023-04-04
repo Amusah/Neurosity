@@ -23,7 +23,7 @@ body {
 .get-crown-btn {
   text-decoration: none;
   background-color: #FF5841;
-  padding: 0.5rem 0 0.5rem 1rem;
+  padding: 0.5rem 0 0.5rem 1rem !important;
   border-radius: 0.8rem;
   color: #fff;
   font-family: "Eina-SemiBold";
@@ -88,7 +88,7 @@ header nav .nav-links li {
 header nav .nav-links li:not(:last-child) {
   padding: 1.5rem 2.2rem;
 }
-header nav .nav-links li:hover:not(:last-child) {
+header nav .nav-links li:hover:not(.get-crown-btn) {
   background-color: #131820;
   border-radius: 0.5rem;
 }
@@ -102,12 +102,18 @@ header nav .nav-links li a:hover:not(.crown-txt) {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-header nav .nav-links .get-crown-btn:hover .arrow span {
-  padding: 0 0.1rem;
-}
 header nav .nav-links .arrow, header nav .nav-links span {
   font-size: 3rem;
   padding: 0.2rem 0 1rem 0.25rem;
+}
+@-moz-document url-prefix() {
+  header nav .nav-links .arrow, header nav .nav-links span {
+    font-size: 2.2rem;
+    padding: 0.2rem 0 0.1rem 0.25rem;
+  }
+}
+header nav .nav-links .get-crown-btn:hover .arrow span {
+  padding: 0 0.1rem;
 }
 header nav .burger {
   display: none;
@@ -115,7 +121,7 @@ header nav .burger {
 header nav .get-crown-li {
   display: none;
 }
-header nav .nav-logo-2 {
+header nav .nav-logo-2, header nav .socials {
   display: none;
 }
 
@@ -173,6 +179,12 @@ header nav .nav-logo-2 {
   font-size: 3rem;
   padding: 0.5rem 0.5rem 1.1rem 0.25rem;
 }
+@-moz-document url-prefix() {
+  .hero .hero-text .hero-footer .get-crown-btn .arrow, .hero .hero-text .hero-footer .get-crown-btn span {
+    font-size: 3rem;
+    padding: 1.1rem 0.5rem 1.1rem 0.25rem;
+  }
+}
 .hero .hero-text .hero-footer .get-crown-btn .crown-txt {
   text-decoration: none;
 }
@@ -197,29 +209,31 @@ header nav .nav-logo-2 {
   }
 }
 @media screen and (max-width: 1025px) {
+  nav {
+    padding: 2rem 2.7rem !important;
+    text-align: center;
+  }
   nav .burger {
-    display: block;
-    position: relative;
+    display: block !important;
     cursor: pointer;
   }
   nav .burger span {
-    padding: 0.2rem 2rem;
+    padding: 0.1rem 1.1rem;
     background: #5B707A;
-    margin: 0.5rem 0;
+    margin: 0.4rem 0;
     display: block;
-    transition: all 1s;
   }
   nav .nav-links {
     position: relative;
     background: #010203;
-    width: 43%;
+    width: 46%;
     height: 100%;
     position: fixed;
     top: 0;
-    left: 57%;
+    left: 100%;
     text-align: center;
     flex-direction: column;
-    transition: transform 1s ease;
+    transition: transform 0.6s ease;
     opacity: 0.93;
   }
   nav .nav-links .nav-logo-2 {
@@ -231,12 +245,12 @@ header nav .nav-logo-2 {
   }
   nav .nav-links .I {
     position: absolute;
-    top: 18%;
+    top: 19%;
     margin-left: 1.7rem;
   }
   nav .nav-links .II {
     position: absolute;
-    top: 25%;
+    top: 26%;
   }
   nav .nav-links .III {
     position: absolute;
@@ -250,5 +264,28 @@ header nav .nav-logo-2 {
   }
   nav .nav-links .get-crown-btn {
     display: none;
+  }
+  nav .nav-links .socials {
+    display: block;
+    position: absolute;
+    top: 83%;
+  }
+  nav .nav-links .socials a {
+    padding: 0 1.1rem;
+  }
+  nav .nav-links .socials a img {
+    width: 2rem;
+  }
+  nav .nav-open {
+    transform: translateX(-100%);
+  }
+  nav .toggle .line1 {
+    transform: rotateZ(45deg) translateY(300%);
+  }
+  nav .toggle .line2 {
+    opacity: 0;
+  }
+  nav .toggle .line3 {
+    transform: rotateZ(-45deg) translateY(-300%);
   }
 }

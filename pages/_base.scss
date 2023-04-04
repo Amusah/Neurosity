@@ -28,7 +28,7 @@ body{
 .get-crown-btn{
     text-decoration: none;
     background-color: #FF5841;
-    padding: 0.5rem 0 0.5rem 1rem;
+    padding: 0.5rem 0 0.5rem 1rem !important;
     border-radius: 0.8rem;
     color: #fff;
     font-family: 'Eina-SemiBold';
@@ -41,6 +41,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    
 
     &:hover{
         box-shadow: 0 0 1.2rem 0.1rem #FF5841;
