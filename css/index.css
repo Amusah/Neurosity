@@ -259,6 +259,15 @@ header nav .nav-logo-2, header nav .socials {
   nav .nav-links li a {
     color: #2AC7DC !important;
   }
+  nav .nav-links li, nav .nav-links a:hover {
+    background-color: #010203 !important;
+  }
+  nav .nav-links li:hover a, nav .nav-links a:hover:hover a {
+    background: #2AC7DC !important;
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+  }
   nav .nav-links .get-crown-li {
     display: block;
   }
@@ -280,12 +289,12 @@ header nav .nav-logo-2, header nav .socials {
     transform: translateX(-100%);
   }
   nav .toggle .line1 {
-    transform: rotateZ(45deg) translateY(300%);
+    transform: rotateZ(45deg) translateY(430%);
   }
   nav .toggle .line2 {
     opacity: 0;
   }
   nav .toggle .line3 {
-    transform: rotateZ(-45deg) translateY(-300%);
+    transform: rotateZ(-45deg) translateY(-430%);
   }
 }

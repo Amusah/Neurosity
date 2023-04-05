@@ -190,7 +190,6 @@ header{
                     padding-left: 0.5rem;
                     transition: all 0.8s;
                 }
-                
             }
         }
        
@@ -223,16 +222,13 @@ header{
             display: block !important;
             //position: relative;
             cursor: pointer;
-            //width: 2rem;
             
-    
+
             & span{
                 padding: 0.1rem 1.1rem;
                 background: #5B707A;
                 margin: 0.4rem 0;
                 display: block;
-                //width: 50% !important;
-                //transition: all 1s ease-in;
             }
         }
             // position: relative;
@@ -256,8 +252,9 @@ header{
                     left: 6%;
                     top: 4%;
                     width: 14rem;
-                }        
-              
+                    
+                }
+            
                .I{
                 position: absolute;
                 top: 19%;
@@ -274,7 +271,16 @@ header{
                li a{
                 color: #2AC7DC !important;
                }
-    
+               li,a:hover{
+                background-color: #010203 !important;
+                
+                &:hover a{
+                background: #2AC7DC !important;
+                background-clip: text !important;
+                -webkit-background-clip: text !important;
+                -webkit-text-fill-color: transparent !important;
+                }
+               }
                 .get-crown-li{
                     display: block;
                 }
@@ -301,15 +307,15 @@ header{
             }
             .toggle{
                 .line1{
-                    transform: rotateZ(45deg) translateY(300%);
-                    //margin
+                    transform: rotateZ(45deg) translateY(430%);
                 }
                 .line2{
                     opacity: 0;
                 }
                 .line3{
-                    transform: rotateZ(-45deg) translateY(-300%);
+                    transform: rotateZ(-45deg) translateY(-430%);
                 }
             }
+            
         }
     }
