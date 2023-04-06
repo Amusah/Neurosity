@@ -137,7 +137,6 @@ header{
             font-size: 5.6rem;
             font-weight: 500;
             line-height: 1.3;
-            
         }
         .crown-tm{
             font-family: 'Eina-SemiBold';
@@ -254,7 +253,6 @@ header{
                     width: 14rem;
                     
                 }
-            
                .I{
                 position: absolute;
                 top: 19%;
@@ -317,5 +315,58 @@ header{
                 }
             }
             
+        }
+    }
+
+
+    @media screen and (max-width: 1024px){
+        .hero {
+            .hero-text{
+                width: 48%;
+        
+                .hero-header{
+                    font-size: 4rem !important;
+                    line-height: 1.3;
+                }
+                .crown-tm{
+                    font-size: 8.9rem;
+                    font-weight: 900;
+                    width: 50rem;
+                    height: 10rem;
+                    padding-bottom: 10.5rem;
+                    letter-spacing: 0.5rem;
+                    
+                    // .tm{
+                    //     font-size: 2.5rem;
+                    //     margin-top: 1.5rem;
+                    //     letter-spacing: 0;
+                    // }
+                }
+        
+                .hero-footer{
+                    p{
+                        //font-size: calc(1rem + 1vw);
+                        font-size: 2.4rem;
+                        line-height: 1.5;
+                        padding: 1.5rem 0 3.5rem;
+                    }
+                    .get-crown-btn{
+                        width: 18rem;
+                        margin: 0;
+                        
+                        .arrow, span{
+                            font-size: 3rem;
+                            padding: 0.5rem 0.5rem 1.1rem 0.25rem;
+                    
+                        }
+                        //@include firefox-hero-btn;
+        
+                        .crown-txt{
+                            text-decoration: none;
+                        }
+                    }
+                }
+               
+            }
         }
     }
