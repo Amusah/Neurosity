@@ -1,4 +1,5 @@
 const nav = document.querySelector('.nav-links');
+const navbar = document.querySelector('.nav-bar');
 const burger = document.querySelector('.burger');
 const links = nav.querySelector('a');
 const body = document.getElementsByTagName('body')[0];
@@ -37,3 +38,11 @@ const getMousePosition = () => {
 }
 const handleClick = getMousePosition();
 window.addEventListener('click', handleClick);
+
+// Change navbar color on scroll
+window.onscroll = () => {
+  document.body.scrollTop > 25 || 
+  document.documentElement.scrollTop > 25 ?
+  navbar.classList.add('nav-bg-color') :
+  navbar.classList.remove('nav-bg-color');
+};
