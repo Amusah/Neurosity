@@ -200,25 +200,42 @@ header nav .nav-logo-2, header nav .socials {
   transition: all 0.8s;
 }
 
-.partners .featured p {
-  color: #fff;
-  font-size: 3rem;
+.featured-container {
+  width: 100%;
+  text-align: center;
+}
+.featured-container .partners {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+.featured-container .partners div {
+  padding: 2rem 1.8rem;
+}
+.featured-container .partners div:hover:not(:first-child) {
+  background-color: #131820;
+  border-radius: 0.5rem;
+}
+.featured-container .partners .featured p {
+  color: #5B707A;
+  font-size: 2rem;
   font-family: "Eina-Regular";
 }
-.partners .forbes img {
-  width: 30rem;
+.featured-container .partners .forbes img {
+  width: 9rem;
 }
-.partners .ted img {
-  width: 30rem;
+.featured-container .partners .ted img {
+  width: 6rem;
 }
-.partners .cheddar img {
-  width: 30rem;
+.featured-container .partners .cheddar img {
+  width: 11rem;
 }
-.partners .tnw img {
-  width: 30rem;
+.featured-container .partners .tnw img {
+  width: 9rem;
 }
-.partners .verdict img {
-  width: 30rem;
+.featured-container .partners .verdict img {
+  width: 11rem;
 }
 
 @media screen and (max-width: 1300px) {
