@@ -117,12 +117,13 @@
             }
             
         }
-        
-        .hero {
+    
+        .hero{
              top: 17%;
              left: 2.6%;
             // width: 100%;
             // padding: 0 0 14.5rem 14.5rem;
+            @include firefox-mobile-btn;
         }
     }
 

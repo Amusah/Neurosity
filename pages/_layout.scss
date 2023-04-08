@@ -16,6 +16,40 @@
     }
   }
 
+  @mixin firefox-mobile-btn{
+    @-moz-document url-prefix() {
+        &-footer{
+            .get-crown-btn{
+                .arrow, span{
+                    font-size: 3rem;
+                    padding: 1.2rem 0.5rem 1.1rem 0.25rem !important;
+                }
+                &:hover .arrow span{
+                    padding-right: 0.3rem !important;
+                    padding-left: 0.5rem !important;
+                }
+            }
+        }
+    }
+  }
+
+  @mixin crown-btn{
+    width: 18rem;
+    margin: 0;
+    .arrow, span{
+        font-size: 3rem;
+        padding: 0.5rem 0.5rem 1.1rem 0.25rem;
+    }
+    .crown-txt{
+        text-decoration: none;
+    }
+    &:hover .arrow span{
+        padding-right: 0.3rem;
+        padding-left: 0.5rem;
+        transition: all 0.8s;
+    }
+}
+
 header{
         min-height:110vh;
         background: url('/img/banner.webp') center center;
@@ -108,12 +142,6 @@ header{
 
     }
 
-    // $header1: calc(2rem + 1vw);
-    // $header2: calc(3.5rem + 1vw);
-    // $header3: calc(3rem + 1vw);
-    // $header4: calc(2.4rem + 1vw);
-    // $text: calc(1.5rem + 1vw);
-    // $big: calc(6rem + 1vw);
 }
 
 // hero text
@@ -170,25 +198,8 @@ header{
                 padding: 1.5rem 0 3.5rem;
             }
             .get-crown-btn{
-                width: 18rem;
-                margin: 0;
-                
-                .arrow, span{
-                    font-size: 3rem;
-                    padding: 0.5rem 0.5rem 1.1rem 0.25rem;
-            
-                }
+                @include crown-btn;
                 @include firefox-hero-btn;
-
-                .crown-txt{
-                    text-decoration: none;
-                }
-
-                &:hover .arrow span{
-                    padding-right: 0.3rem;
-                    padding-left: 0.5rem;
-                    transition: all 0.8s;
-                }
             }
         }
     }

@@ -185,12 +185,6 @@ header nav .nav-logo-2, header nav .socials {
   font-size: 3rem;
   padding: 0.5rem 0.5rem 1.1rem 0.25rem;
 }
-@-moz-document url-prefix() {
-  .hero .hero-text .hero-footer .get-crown-btn .arrow, .hero .hero-text .hero-footer .get-crown-btn span {
-    font-size: 3rem;
-    padding: 1.1rem 0.5rem 1.1rem 0.25rem;
-  }
-}
 .hero .hero-text .hero-footer .get-crown-btn .crown-txt {
   text-decoration: none;
 }
@@ -198,6 +192,12 @@ header nav .nav-logo-2, header nav .socials {
   padding-right: 0.3rem;
   padding-left: 0.5rem;
   transition: all 0.8s;
+}
+@-moz-document url-prefix() {
+  .hero .hero-text .hero-footer .get-crown-btn .arrow, .hero .hero-text .hero-footer .get-crown-btn span {
+    font-size: 3rem;
+    padding: 1.1rem 0.5rem 1.1rem 0.25rem;
+  }
 }
 
 .featured-container {
@@ -379,6 +379,16 @@ header nav .nav-logo-2, header nav .socials {
   .hero {
     top: 17%;
     left: 2.6%;
+  }
+  @-moz-document url-prefix() {
+    .hero-footer .get-crown-btn .arrow, .hero-footer .get-crown-btn span {
+      font-size: 3rem;
+      padding: 1.2rem 0.5rem 1.1rem 0.25rem !important;
+    }
+    .hero-footer .get-crown-btn:hover .arrow span {
+      padding-right: 0.3rem !important;
+      padding-left: 0.5rem !important;
+    }
   }
 }
 @media screen and (max-width: 1024px) {
