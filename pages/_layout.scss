@@ -209,6 +209,9 @@ header{
         div{
             padding: 2rem 1.8rem;
 
+            &:not(:first-child :last-child){
+                margin-right: 2.2rem;
+            }
             &:hover:not(:first-child){
                 background-color: #131820;
                 border-radius: 0.5rem; 
@@ -216,7 +219,7 @@ header{
         }
         .featured p{
             color: #5B707A;
-            font-size: 2rem;
+            font-size: 2.2rem;
             font-family: 'Eina-Regular';
             
         }
@@ -253,11 +256,41 @@ header{
     }
 }
 
+.cards{
+    //width: 100%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 13rem 0;
+    .card{
+        background: #0C0F14;
+        color: #fff;
+        width: 31rem;
+        //height: 30rem;
+        padding: 2.5rem 2.3rem 3.6rem;
+        text-align: left;
+        border-radius: 1rem;
+        &:not(:last-child){
+            margin-right: 2.8rem;
+        }
+        &-head{
+            span img{
+                width: 2.5rem;
+                padding: 1rem 0;
+            }
+            p{
+                font-size: 2.2rem;
+                padding: 1rem 0;
+            }
+        }
+        &-body{
+            p{
+                font-size: 1.8rem;
+                color: #8E9DA8;
+                line-height: 1.8;
+            }
+        }
+    }
+}
 
-
-
-
-
-
-    
-    

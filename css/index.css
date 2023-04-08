@@ -213,13 +213,16 @@ header nav .nav-logo-2, header nav .socials {
 .featured-container .partners div {
   padding: 2rem 1.8rem;
 }
+.featured-container .partners div:not(:first-child :last-child) {
+  margin-right: 2.2rem;
+}
 .featured-container .partners div:hover:not(:first-child) {
   background-color: #131820;
   border-radius: 0.5rem;
 }
 .featured-container .partners .featured p {
   color: #5B707A;
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-family: "Eina-Regular";
 }
 .featured-container .partners .forbes img {
@@ -236,6 +239,38 @@ header nav .nav-logo-2, header nav .socials {
 }
 .featured-container .partners .verdict img {
   width: 11rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 13rem 0;
+}
+.cards .card {
+  background: #0C0F14;
+  color: #fff;
+  width: 31rem;
+  padding: 2.5rem 2.3rem 3.6rem;
+  text-align: left;
+  border-radius: 1rem;
+}
+.cards .card:not(:last-child) {
+  margin-right: 2.8rem;
+}
+.cards .card-head span img {
+  width: 2.5rem;
+  padding: 1rem 0;
+}
+.cards .card-head p {
+  font-size: 2.2rem;
+  padding: 1rem 0;
+}
+.cards .card-body p {
+  font-size: 1.8rem;
+  color: #8E9DA8;
+  line-height: 1.8;
 }
 
 @media screen and (max-width: 1300px) {
