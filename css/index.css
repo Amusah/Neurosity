@@ -201,8 +201,12 @@ header nav .nav-logo-2, header nav .socials {
 }
 
 .featured-container {
-  width: 100%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 110rem;
+  margin: 0 auto;
+  padding: 1rem 4rem;
 }
 .featured-container .partners {
   display: flex;
@@ -242,11 +246,10 @@ header nav .nav-logo-2, header nav .socials {
 }
 
 .cards {
+  width: 100%;
   display: flex;
   justify-content: center;
-  width: 100%;
-  margin: 0 auto;
-  padding: 13rem 0;
+  padding: 13rem 0 3rem;
 }
 .cards .card {
   background: #0C0F14;
@@ -271,6 +274,34 @@ header nav .nav-logo-2, header nav .socials {
   font-size: 1.8rem;
   color: #8E9DA8;
   line-height: 1.8;
+}
+
+.cards-btn {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.cards-btn .get-crown-btn {
+  width: 18rem;
+  margin: 0;
+}
+.cards-btn .get-crown-btn .arrow, .cards-btn .get-crown-btn span {
+  font-size: 3rem;
+  padding: 0.5rem 0.5rem 1.1rem 0.25rem;
+}
+.cards-btn .get-crown-btn .crown-txt {
+  text-decoration: none;
+}
+.cards-btn .get-crown-btn:hover .arrow span {
+  padding-right: 0.3rem;
+  padding-left: 0.5rem;
+  transition: all 0.8s;
+}
+@-moz-document url-prefix() {
+  .cards-btn .get-crown-btn .arrow, .cards-btn .get-crown-btn span {
+    font-size: 3rem;
+    padding: 1.1rem 0.5rem 1.1rem 0.25rem;
+  }
 }
 
 @media screen and (max-width: 1300px) {
@@ -455,6 +486,19 @@ header nav .nav-logo-2, header nav .socials {
   .hero .hero-text .hero-footer .get-crown-btn .crown-txt {
     text-decoration: none;
   }
+  .featured-container .cards {
+    flex-direction: column;
+  }
+  .featured-container .cards .card {
+    margin: 0 auto;
+    width: 35rem;
+  }
+  .featured-container .cards .card:not(:last-child) {
+    margin-bottom: 2.5rem;
+  }
+  .featured-container .cards-btn {
+    display: none;
+  }
 }
 @media screen and (max-width: 950px) {
   .hero .hero-text {
@@ -472,15 +516,47 @@ header nav .nav-logo-2, header nav .socials {
 }
 @media screen and (max-width: 831px) {
   header {
+    min-height: 135vh;
     background: url("/img/mobile-banner.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
   .hero {
-    top: 80%;
-    left: 3%;
+    top: 69%;
+    left: 20%;
     width: 100%;
-    padding: 0 0 14.5rem 14.5rem;
+    padding: 0 !important;
+    margin: 0 auto;
+  }
+  .hero .hero-text {
+    width: 60%;
+    padding-bottom: 30rem !important;
+  }
+  .hero .hero-text .hero-header {
+    font-size: 3.4rem !important;
+    line-height: 1.2;
+  }
+  .hero .hero-text .crown-tm {
+    font-size: 5rem;
+    font-weight: 900;
+    width: 50rem;
+    height: 7rem;
+    padding-bottom: 0;
+    padding-top: 0.5rem;
+    letter-spacing: 0.5rem;
+  }
+  .hero .hero-text .crown-tm .tm {
+    font-size: 2rem;
+    margin-top: 1rem;
+    letter-spacing: 0;
+  }
+  .hero .hero-text .hero-footer p {
+    font-size: 1.8rem !important;
+    line-height: 1.3;
+    padding: 0 0 1.5rem;
+  }
+  .featured-container {
+    margin-top: 10rem;
   }
 }

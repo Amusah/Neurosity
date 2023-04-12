@@ -207,6 +207,22 @@
                 }
             }
         }
+        .featured-container {
+            .cards{
+                flex-direction: column;
+    
+                .card{
+                    margin: 0 auto;
+                    width: 35rem;
+                    &:not(:last-child){
+                        margin-bottom: 2.5rem;
+                    }
+                }
+            }
+            .cards-btn{
+                display: none;
+            }
+        }
     }
 
     @media screen and (max-width: 950px){
@@ -232,15 +248,56 @@
 
     @media screen and (max-width: 831px){
         header{
+            min-height: 135vh;
             background: url('/img/mobile-banner.webp');
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+            //padding-bottom: 50rem !important;
         }
         .hero{
-            top: 80%;
-            left: 3%;
+            top: 69%;
+            left: 20%;
             width: 100%;
-            padding: 0 0 14.5rem 14.5rem;
+            padding: 0 !important;
+            margin: 0 auto;
+            //text-align: center;
+
+            .hero-text{
+                width: 60%;
+                padding-bottom: 30rem !important;
+        
+                .hero-header{
+                    font-size: 3.4rem !important;
+                    line-height: 1.2;
+                }
+                .crown-tm{
+                    font-size: 5rem;
+                    font-weight: 900;
+                    width: 50rem;
+                    height: 7rem;
+                    padding-bottom: 0;
+                    padding-top: 0.5rem;
+                    letter-spacing: 0.5rem;
+
+                    .tm{
+                        font-size: 2rem;
+                        margin-top: 1rem;
+                        letter-spacing: 0;
+                    }
+                }
+                .hero-footer{
+                    p{
+                        font-size: 1.8rem !important;
+                        line-height: 1.3;
+                        padding: 0 0 1.5rem;
+                    }
+                    
+                }
+            }
+        }
+
+        .featured-container{
+            margin-top: 10rem;
         }
     }

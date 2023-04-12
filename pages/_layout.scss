@@ -207,8 +207,14 @@ header{
 
 
 .featured-container{
-    width: 100%;
+    // width: 100%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 110rem;
+    margin: 0 auto;
+    padding: 1rem 4rem;
+    //box-sizing: border-box;
 
     .partners{
         // margin: 0 auto;
@@ -267,41 +273,58 @@ header{
     }
 }
 
-.cards{
-    //width: 100%;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 0 auto;
-    padding: 13rem 0;
-    .card{
-        background: #0C0F14;
-        color: #fff;
-        width: 31rem;
-        //height: 30rem;
-        padding: 2.5rem 2.3rem 3.6rem;
-        text-align: left;
-        border-radius: 1rem;
-        &:not(:last-child){
-            margin-right: 2.8rem;
-        }
-        &-head{
-            span img{
-                width: 2.5rem;
-                padding: 1rem 0;
+
+    .cards{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        //margin: 0 auto;
+        padding: 13rem 0 3rem;
+        .card{
+            background: #0C0F14;
+            color: #fff;
+            width: 31rem;
+            //height: 30rem;
+            padding: 2.5rem 2.3rem 3.6rem;
+            text-align: left;
+            border-radius: 1rem;
+            &:not(:last-child){
+                margin-right: 2.8rem;
             }
-            p{
-                font-size: 2.2rem;
-                padding: 1rem 0;
+            &-head{
+                span img{
+                    width: 2.5rem;
+                    padding: 1rem 0;
+                }
+                p{
+                    font-size: 2.2rem;
+                    padding: 1rem 0;
+                }
             }
-        }
-        &-body{
-            p{
-                font-size: 1.8rem;
-                color: #8E9DA8;
-                line-height: 1.8;
+            &-body{
+                p{
+                    font-size: 1.8rem;
+                    color: #8E9DA8;
+                    line-height: 1.8;
+                }
             }
         }
     }
+
+
+.cards-btn{
+    width: 100%;
+    //margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    
+    
+    .get-crown-btn{
+        @include crown-btn;
+        @include firefox-hero-btn;
+        
+    }
 }
+
+
 
