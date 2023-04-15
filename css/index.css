@@ -304,6 +304,61 @@ header nav .nav-logo-2, header nav .socials {
   }
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  min-height: 20vh;
+  background-color: cyan;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+footer .footer-btn {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+footer .footer-btn .get-crown-btn {
+  margin: 0 auto;
+  width: 50%;
+}
+footer .footer-btn .get-crown-btn a {
+  text-decoration: none;
+}
+footer .help {
+  background-color: #0E77CA;
+  height: 4.5rem;
+  width: 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+  margin-right: 2.5rem;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  border-radius: 3rem;
+}
+footer .help span {
+  height: 4rem;
+  position: relative;
+}
+footer .help span img {
+  width: 2.5rem;
+  margin-top: 0.8rem;
+  margin-right: 1rem;
+  position: absolute;
+  right: 90%;
+}
+footer .help span .help-link {
+  color: #fff;
+  font-family: "Eina-SemiBold";
+  font-size: 2rem;
+  position: absolute;
+  margin-top: 1rem;
+}
+
 @media screen and (max-width: 1300px) {
   .hero {
     top: 22%;
