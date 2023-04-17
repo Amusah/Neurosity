@@ -6,6 +6,7 @@ const body = document.getElementsByTagName('body')[0];
 
 // showing and hiding side menu with burger icon
 burger.addEventListener('click', () => {
+  console.log('clicked');
     nav.classList.toggle('nav-open');
     burger.classList.toggle('toggle');
 });

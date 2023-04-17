@@ -647,19 +647,11 @@ footer .help span .help-link {
   }
   .hero .hero-text {
     width: 50%;
-    padding-bottom: 30rem !important;
+    padding: 0 !important;
   }
   .hero .hero-text .hero-header {
     font-size: 3rem !important;
     line-height: 1;
-  }
-  .hero .hero-text .crown-tm {
-    font-size: 4.5rem;
-    width: 40rem;
-  }
-  .hero .hero-text .crown-tm .tm {
-    font-size: 1.9rem;
-    margin-top: 0.7rem;
   }
   .hero .hero-text .hero-footer p {
     font-size: 1.6rem !important;
