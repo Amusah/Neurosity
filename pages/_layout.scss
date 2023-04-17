@@ -332,7 +332,7 @@ footer{
     text-align: center;
     width: 100%;
     min-height: 20vh;
-    background-color: cyan;
+    //background-color: cyan;
     display: flex;
     align-items: center;
     //align-items: center;
@@ -341,10 +341,15 @@ footer{
         text-align: center;
         margin: 0 auto;
         width: 100%;
+        padding-left: 15%;
+        //padding-right: 15rem;
+        //margin-top: ;
     
     .get-crown-btn{
         margin: 0 auto;
-        width: 50%;
+        margin-top: 8rem;
+        width: 40rem;
+        display: none;
     }
 
     .get-crown-btn a{
@@ -355,14 +360,15 @@ footer{
     }
 
     .help{
-        background-color: #0E77CA;
+        background-color: #000;
         height: 4.5rem;
         width: 12rem;
         display: flex;
         align-items: center;
         justify-content: center;
         float: right;
-        margin-right: 2.5rem;
+        margin-right: 2.5%;
+        margin-top: 9rem;
         text-decoration: none;
         padding: 1.5rem 4rem;
         border-radius: 3rem;
@@ -374,16 +380,16 @@ footer{
             position: relative;
             
             img{
-                width: 2.5rem;
+                width: 2.2rem;
                 margin-top: 0.8rem;
-                margin-right: 1rem;
+                margin-right: 0.7rem;
                 position: absolute;
-                right: 90%;
+                right: 100%;
             }
             .help-link{
                 color: #fff;
                 font-family: 'Eina-SemiBold';
-                font-size: 2rem;
+                font-size: 1.5rem;
                 position: absolute;
                 margin-top: 1rem;
                 //margin-bottom: 4rem;

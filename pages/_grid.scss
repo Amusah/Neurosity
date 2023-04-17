@@ -301,3 +301,24 @@
             margin-top: 10rem;
         }
     }
+
+
+    @media screen and (max-width: 768px){
+        nav{
+            .nav-links{
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        footer {
+            .footer-btn .get-crown-btn{
+                display: block;
+            }
+
+            .help{
+                margin-top: 0;
+                margin-bottom: 3rem;
+            }
+        }
+    }
