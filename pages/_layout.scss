@@ -341,21 +341,20 @@ footer{
         text-align: center;
         margin: 0 auto;
         width: 100%;
-        padding-left: 15%;
+        //padding-left: 15%;
+        //background-color: white;
         //padding-right: 15rem;
         //margin-top: ;
     
     .get-crown-btn{
         margin: 0 auto;
         margin-top: 8rem;
-        width: 40rem;
+        width: 39rem;
         display: none;
     }
 
     .get-crown-btn a{
         text-decoration: none;
-        //display: block;
-        //float: left;
         }
     }
 
@@ -372,6 +371,7 @@ footer{
         text-decoration: none;
         padding: 1.5rem 4rem;
         border-radius: 3rem;
+        transition: all 0.2s ease-in;
     
         //margin-bottom: 5rem;
 
