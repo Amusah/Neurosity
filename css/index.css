@@ -98,15 +98,15 @@ header nav .nav-links li:hover:not(.get-crown-btn) {
   background-color: #131820;
   border-radius: 0.5rem;
 }
-header nav .nav-links li a {
-  text-decoration: none;
-  color: #6ED7DD;
-}
-header nav .nav-links li a:hover:not(.crown-txt) {
+header nav .nav-links li:hover:not(.get-crown-btn):hover:not(.crown-txt) a {
   background: -webkit-linear-gradient(left, #73E9F6, #0E77CA);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+header nav .nav-links li a {
+  text-decoration: none;
+  color: #6ED7DD;
 }
 header nav .nav-links .arrow, header nav .nav-links span {
   font-size: 3rem;
@@ -280,6 +280,7 @@ header nav .nav-logo-2, header nav .socials {
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  z-index: 1;
 }
 .cards-btn .get-crown-btn {
   width: 18rem;

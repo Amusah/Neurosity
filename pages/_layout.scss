@@ -102,18 +102,24 @@ header{
                     background-color: #131820;
                     border-radius: 0.5rem; 
                 }
+                &:hover:not(.get-crown-btn):hover:not(.crown-txt) a{
+                    background: -webkit-linear-gradient(left, #73E9F6, #0E77CA);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
                 a{
                     text-decoration: none;
                     //color: #57ABB5;
                     color: #6ED7DD;
                     //transition: all 1s ease-in;                
 
-                    &:hover:not(.crown-txt){
-                        background: -webkit-linear-gradient(left, #73E9F6, #0E77CA);
-                        background-clip: text;
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                    }
+                    // &:hover:not(.crown-txt){
+                    //     background: -webkit-linear-gradient(left, #73E9F6, #0E77CA);
+                    //     background-clip: text;
+                    //     -webkit-background-clip: text;
+                    //     -webkit-text-fill-color: transparent;
+                    // }
                 }
             }
             .arrow, span{
@@ -313,12 +319,12 @@ header{
     //margin: 0 auto;
     display: flex;
     justify-content: flex-end;
+    z-index: 1;
     
     
     .get-crown-btn{
         @include crown-btn;
         @include firefox-hero-btn;
-        
     }
 }
 

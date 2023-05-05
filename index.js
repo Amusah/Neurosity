@@ -6,7 +6,7 @@ const body = document.getElementsByTagName('body')[0];
 
 // showing and hiding side menu with burger icon
 burger.addEventListener('click', () => {
-  console.log('clicked');
+  //console.log('clicked');
     nav.classList.toggle('nav-open');
     burger.classList.toggle('toggle');
 });
@@ -28,14 +28,17 @@ const getMousePosition = () => {
     xPos =  e.clientX;
   });
 
+ 
   return () => {
-    //console.log(xPos);
-    if(xPos < 540 && nav.classList.contains('nav-open')){
-      //console.log(true);
-      nav.classList.remove('nav-open');
-      burger.classList.remove('toggle');
+    if(window.innerWidth >= 768){
+      console.log(xPos);
+      if(xPos < 500 && nav.classList.contains('nav-open')){
+        //console.log(true);
+        nav.classList.toggle('nav-open');
+        burger.classList.toggle('toggle');
+      }
     }
-  };
+  }
 }
 const handleClick = getMousePosition();
 window.addEventListener('click', handleClick);
