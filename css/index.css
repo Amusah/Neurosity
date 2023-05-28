@@ -280,7 +280,6 @@ header nav .nav-logo-2, header nav .socials {
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  z-index: 1;
 }
 .cards-btn .get-crown-btn {
   width: 18rem;
@@ -347,6 +346,7 @@ footer .help {
 footer .help span {
   height: 4rem;
   position: relative;
+  z-index: 3;
 }
 footer .help span img {
   width: 2.2rem;
@@ -361,6 +361,56 @@ footer .help span .help-link {
   font-size: 1.5rem;
   position: absolute;
   margin-top: 1rem;
+}
+
+#testimonials {
+  width: 100%;
+}
+
+.testimonial {
+  min-height: 100vh;
+  color: #fff;
+  z-index: 5;
+  padding: 10rem 10rem;
+}
+
+.testimonial-content {
+  background: url("https://d33wubrfki0l68.cloudfront.net/2e869301cfc480eeaef86308f15f664c833309d2/7b5c0/static/wave-17ac586a947892dfa6f1b4cf9808800d.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: 10rem 30rem;
+}
+.testimonial-content .slider {
+  max-width: 80%;
+  margin: 0 auto;
+}
+.testimonial-content .rating {
+  width: 100%;
+}
+.testimonial-content .rating .stars {
+  padding-bottom: 4rem;
+}
+.testimonial-content .rating .stars img {
+  width: 2rem;
+}
+.testimonial-content .rating .stars img:not(:last-child) {
+  padding-right: 0.3rem;
+}
+.testimonial-content .rating .stars .num-1 {
+  padding-left: 1rem;
+  font-size: 2rem;
+}
+.testimonial-content .rating .stars .num-2 {
+  color: #8E9DA8;
+}
+.testimonial-content .rating .rating-text {
+  font-size: 6rem;
+}
+.testimonial-content .rating .person {
+  font-size: 1.8rem;
+  padding-top: 2rem;
+  line-height: 2.2;
+  color: #8E9DA8;
 }
 
 @media screen and (max-width: 1300px) {

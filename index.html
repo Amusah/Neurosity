@@ -51,68 +51,71 @@
     </header>
     <main>
         <!-- Featured and Cards section -->
-        <div class="featured-container">
-            <div class="partners">
-                <div class="featured">
-                    <p>Featured in</p>
+        <section>
+            <div class="featured-container">
+                <div class="partners">
+                    <div class="featured">
+                        <p>Featured in</p>
+                    </div>
+                    <div class="forbes"><img src="/img/forbes.png" alt="forbes"></div>
+                    <div class="ted"><img src="/img/ted.png" alt="ted"></div>
+                    <div class="cheddar"><img src="/img/cheddar.png" alt="cheddar"></div>
+                    <div class="tnw"><img src="/img/tnw.png" alt="tnw"></div>
+                    <div class="verdict"><img src="/img/verdict.png" alt="verdict"></div>
                 </div>
-                <div class="forbes"><img src="/img/forbes.png" alt="forbes"></div>
-                <div class="ted"><img src="/img/ted.png" alt="ted"></div>
-                <div class="cheddar"><img src="/img/cheddar.png" alt="cheddar"></div>
-                <div class="tnw"><img src="/img/tnw.png" alt="tnw"></div>
-                <div class="verdict"><img src="/img/verdict.png" alt="verdict"></div>
+    
+                <div class="cards">
+                    <div class="card">
+                        <div class="card-head">
+                            <span class="graph"><img src="/img/graph.webp" alt="chart"></span>
+                            <p>Increase productivity</p>
+                        </div>
+                        <div class="card-body">
+                            <p>
+                                The Crown helps you boost your 
+                                brain's concentration by 
+                                measuring your brain waves and playing 
+                                music that increases your focus.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-head">
+                            <span class="stats"><img src="/img/stat.webp" alt="stats"></span>
+                            <p>Track performance</p>
+                        </div>
+                        <div class="card-body">
+                            <p>
+                                The Crown comes with dashboards
+                                and the Neurosity App to make it
+                                easy to track your improvement.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-head">
+                            <span class="community"><img src="/img/grp.webp" alt="community"></span>
+                            <p>Community</p>
+                        </div>
+                        <div class="card-body">
+                            <p>
+                                The engaged community of
+                                users and developers will
+                                help you get the most out
+                                of your crown.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-btn">
+                    <span class="get-crown-btn">
+                        <a class="crown-txt " href="#">Get CROWN</a>
+                        <div class="arrow" ><span>&#8594</span></div>
+                    </span>
+                </div>
             </div>
-
-            <div class="cards">
-                <div class="card">
-                    <div class="card-head">
-                        <span class="graph"><img src="/img/graph.webp" alt="chart"></span>
-                        <p>Increase productivity</p>
-                    </div>
-                    <div class="card-body">
-                        <p>
-                            The Crown helps you boost your 
-                            brain's concentration by 
-                            measuring your brain waves and playing 
-                            music that increases your focus.
-                        </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-head">
-                        <span class="stats"><img src="/img/stat.webp" alt="stats"></span>
-                        <p>Track performance</p>
-                    </div>
-                    <div class="card-body">
-                        <p>
-                            The Crown comes with dashboards
-                            and the Neurosity App to make it
-                            easy to track your improvement.
-                        </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-head">
-                        <span class="community"><img src="/img/grp.webp" alt="community"></span>
-                        <p>Community</p>
-                    </div>
-                    <div class="card-body">
-                        <p>
-                            The engaged community of
-                            users and developers will
-                            help you get the most out
-                            of your crown.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="cards-btn">
-                <span class="get-crown-btn">
-                    <a class="crown-txt " href="#">Get CROWN</a>
-                    <div class="arrow" ><span>&#8594</span></div>
-                </span>
-            </div>
-        </div>
+        </section>
+        <!-- static footer buttons-->
         <footer>
             <div class="footer-btn">
                 <a class="help" href="#"><span><img src="/img/help.svg" alt=""><span class="help-link"> Help</span></span></a>
@@ -121,8 +124,37 @@
                 </span>
             </div>
             <!-- <a class="help" href="#"><span><img src="/img/help.svg" alt=""><span class="help-link"> Help</span></span></a> -->
-            
         </footer>
+
+        <!-- testimonials -->
+        <section id="testimonials">
+            <div class="testimonial carousel">
+                <div class="testimonial-content carousel-wrapper">
+                    <div class="slider carousel-slide">
+                        <div class="rating">
+                            <div class="stars">
+                                <img src="img/star.svg" alt="">
+                                <img src="img/star.svg" alt="">
+                                <img src="img/star.svg" alt="">
+                                <img src="img/star.svg" alt="">
+                                <img src="img/star.svg" alt="">
+                                <span class="num-1">5<span class="num-2">/5</span>
+                                </span>
+                            </div>
+                            <p class="rating-text">
+                                After my first focus shift I
+                                immediately saw the value. 
+                                <span>Within just 2 minutes The Crown increased my focus by 25%.</span>
+                            </p>
+                            <p class="person">
+                                Aleem R. <br>
+                                Full-Stack Developer
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <script src="index.js"></script>
 </body>

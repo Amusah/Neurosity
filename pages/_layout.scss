@@ -319,7 +319,7 @@ header{
     //margin: 0 auto;
     display: flex;
     justify-content: flex-end;
-    z-index: 1;
+    //z-index: 1;
     
     
     .get-crown-btn{
@@ -380,6 +380,7 @@ footer{
         span{
             height: 4rem;
             position: relative;
+            z-index: 3;
             
             img{
                 width: 2.2rem;
@@ -400,5 +401,66 @@ footer{
     }
 }
 
+// Testimonials
+#testimonials{
+    width: 100%;
+}
+.testimonial{
+    min-height: 100vh;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    color: #fff;
+    z-index: 5;
+    padding: 10rem 10rem;
+    //max-width: 100%;
+    // margin: 0 auto;
+}
 
-
+.testimonial-content{
+    background: url('https://d33wubrfki0l68.cloudfront.net/2e869301cfc480eeaef86308f15f664c833309d2/7b5c0/static/wave-17ac586a947892dfa6f1b4cf9808800d.svg');
+    //background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    //max-width: 100%;
+    //min-height: 50%;
+    padding: 10rem 30rem;
+    //padding-left: 20rem;
+    //margin: 0 auto;
+   
+   
+    .slider{
+        max-width: 80%;
+        margin: 0 auto;
+        // background: url('https://d33wubrfki0l68.cloudfront.net/2e869301cfc480eeaef86308f15f664c833309d2/7b5c0/static/wave-17ac586a947892dfa6f1b4cf9808800d.svg')
+    }
+    .rating{
+        width: 100%;
+        .stars{
+            padding-bottom: 4rem;
+            img{
+                width: 2rem;
+            }
+            img:not(:last-child){
+                padding-right: .3rem;
+            }
+            .num-1{
+                padding-left: 1rem;
+                font-size: 2rem;
+            }
+            .num-2{
+                color: #8E9DA8;
+            }
+        }
+        .rating-text{
+            font-size: 6rem;
+        }
+        .person{
+            font-size: 1.8rem;
+            padding-top: 2rem;
+            line-height: 2.2;
+            color: #8E9DA8;
+        }
+        
+    }
+}
